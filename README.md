@@ -80,7 +80,7 @@ No ffmpeg needed: it downloads a video-only stream and never has to mux anything
 ## Setup
 
 ```bash
-git clone https://github.com/<your-user>/youtube-vault.git
+git clone https://github.com/d4v1d1126-oss/youtube-vault.git
 cd youtube-vault
 ```
 

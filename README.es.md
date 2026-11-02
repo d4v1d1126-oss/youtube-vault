@@ -80,7 +80,7 @@ No hace falta ffmpeg: descarga una pista de solo video y nunca tiene que mezclar
 ## Instalación
 
 ```bash
-git clone https://github.com/<tu-usuario>/youtube-vault.git
+git clone https://github.com/d4v1d1126-oss/youtube-vault.git
 cd youtube-vault
 ```
 
