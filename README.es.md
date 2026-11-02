@@ -139,6 +139,12 @@ uv run vault/vault.py pending            # videos del canal que aún no tienen n
 uv run vault/vault.py candidates a,b 10  # notas candidatas a enlazar, por temas compartidos
 ```
 
+Hay además un test de humo de las heurísticas de fotogramas, que no necesita red: monta un clip sintético y comprueba que las tarjetas, los planos de persona y una pizarra sobreviven cada uno como candidato propio. Pásalo antes de tocar cualquier umbral de `vault.py`:
+
+```bash
+uv run tests/test_frames.py
+```
+
 `check` es lo que mantiene el vault honesto. Valida el YAML, los campos y secciones obligatorios, los `[[enlaces]]` rotos, los temas contra el vocabulario, el tope de capturas, las capturas huérfanas (copiadas pero nunca usadas en una nota) y los nombres de archivo ilegales en Obsidian. `finish` se niega a limpiar mientras quede un solo error.
 
 ---

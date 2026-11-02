@@ -10,6 +10,9 @@ vault/.channel.json
 vault/vault.config.json
 vault/topics.md
 
+# Output of tests/test_frames.py
+tests/_out/
+
 __pycache__/
 *.py[cod]
 

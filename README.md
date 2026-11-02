@@ -139,6 +139,12 @@ uv run vault/vault.py pending            # channel videos that have no note yet
 uv run vault/vault.py candidates a,b 10  # existing notes worth linking, by shared topics
 ```
 
+There is also a smoke test for the frame heuristics, which needs no network — it builds a synthetic clip and checks that cards, talking-head shots and a whiteboard each survive as their own candidate. Run it before changing any threshold in `vault.py`:
+
+```bash
+uv run tests/test_frames.py
+```
+
 `check` is what keeps the vault honest. It validates YAML, required fields and sections, broken `[[links]]`, topics against the vocabulary, the screenshot cap, orphaned screenshots (copied but never used in a note), and Obsidian-illegal filenames. `finish` refuses to clean up while any error stands.
 
 ---
