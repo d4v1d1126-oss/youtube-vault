@@ -1,0 +1,21 @@
+# Temporary workspace: downloaded video, frames, contact sheets, subtitles, transcript.
+# `finish` deletes it, but a run interrupted halfway leaves it behind.
+vault/work/
+
+# Cached channel inventory for `pending`
+vault/.channel.json
+
+# Created by `init` and specific to your channel. Remove these lines if you want to
+# version them (the topic vocabulary in particular is content worth keeping).
+vault/vault.config.json
+vault/topics.md
+
+__pycache__/
+*.py[cod]
+
+.DS_Store
+Thumbs.db
+
+# Obsidian workspace state (keep the rest of .obsidian if you version your vault)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

@@ -1,0 +1,19 @@
+{
+  "channel": {
+    "name": "Channel Name",
+    "short_name": "Name",
+    "url": "https://www.youtube.com/@handle"
+  },
+  "vault_dir": "Channel Name",
+  "language": "es",
+  "subtitle_langs": ["es-orig", "es", "es-ES", "es-419", "en"],
+  "limits": {
+    "max_captures": 6,
+    "max_key_ideas": 10,
+    "max_questions": 7,
+    "min_topics": 3,
+    "max_topics": 6,
+    "max_concepts_per_video": 2
+  },
+  "skip_title_pattern": ""
+}
